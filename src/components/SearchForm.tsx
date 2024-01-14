@@ -29,7 +29,10 @@ function SearchForm() {
     <div className="flex-[3]">
       <div className="flex justify-between">
         <h2 className="mb-2 font-bold text-xl">Request</h2>
+
+
         <MobileDropdown />
+        
       </div>
       <div className="space-y-5 md:max-w-[90%]">
         <label className="relative block">
@@ -75,8 +78,8 @@ const MobileDropdown = () => {
       <DropdownMenuTrigger className="outline-none ml-1 md:ml-3 lg:hidden">
         {isOpen ? <X /> : <AlignCenterIcon />}
       </DropdownMenuTrigger>
-      <DropdownMenuContent data-state="open" className ='m-5'>
-        <div className=" lg:block w-[300px] py-5">
+      <DropdownMenuContent data-state="open" className ='m-5 '>
+        <div className="  w-[300px] py-5">
           <ul className="">
             <li
               className="px-5 flex gap-2 py-4 hover:bg-gray-800 cursor-pointer text-gray-200"
@@ -99,7 +102,7 @@ const MobileDropdown = () => {
                     <Expand />
                     Explore
                   </AccordionTrigger>
-                  <AccordionContent className="p-5 space-y-1">
+                  <AccordionContent className="p-5 space-y-1 overflow-auto h-80">
                     {categories.map((catigory) => (
                       <a
                         className="flex gap-2 text-gray-300 hover:bg-gray-800 cursor-pointer py-3"
@@ -114,7 +117,7 @@ const MobileDropdown = () => {
               </Accordion>
             </li>
           </ul>
-          <div className="text-center bg-blue-300/10 mx-3 rounded-lg p-5 mt-40">
+          <div className="text-center bg-blue-300/10 mx-3 rounded-lg p-5 mt-20 ">
             <img src={books} alt="books" className="block -mt-28 " />
             <p className="-mt-5 mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,

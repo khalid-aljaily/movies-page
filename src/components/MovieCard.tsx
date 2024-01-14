@@ -15,8 +15,8 @@ function MovieCard({movie}:{movie:movie}) {
 
 function setStars(rating:number) {
   const maxRating = 5;
-  const fullStar = <StarIcon className='fill-yellow-400 text-yellow-400 h-4  w-5'/>;
-  const emptyStar = <StarIcon  className='text-yellow-400 h-4 w-5'/>;
+  const fullStar = <StarIcon className='fill-yellow-400 text-yellow-400 h-3 md:h-4 w-4 md:w-5'/>;
+  const emptyStar = <StarIcon  className='text-yellow-400 h-3 md:h-4 w-4 md:w-5'/>;
 
   const fullStarsCount = Math.floor(rating);
   const emptyStarsCount = maxRating - fullStarsCount;

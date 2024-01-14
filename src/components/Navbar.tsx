@@ -21,11 +21,11 @@ function Navbar() {
                   <Avatar className="flex items-center bg-white justify-center h-fit w-fit p-1 mr-2">
                     <CircleUserRound  className="text-black h-4 w-4"/>
                   </Avatar>
-                  <h3>Wade Warren</h3>
+                  <h3 className="text-sm md:text-normal">Wade Warren</h3>
                 </div>
-                <ChevronDown  className="ml-1 md:ml-2"/>
+                <ChevronDown  className="ml-1 md:ml-2 h-5 md:h-7 w-5 md:w-7"/>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className = 'px-5 '>
+            <DropdownMenuContent className = 'px-5'>
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator className = 'bg-blue-500'/>
               <DropdownMenuItem >Profile</DropdownMenuItem>
